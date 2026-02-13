@@ -1,0 +1,21 @@
+:root {
+  --bg: #0f1117;
+  --panel: #151924;
+  --border: #2a3244;
+  --text: #e5ecff;
+  --muted: #8ea0c5;
+  --accent: #6f8cff;
+  --radius: 12px;
+}
+.btn{border:1px solid var(--border);border-radius:var(--radius);padding:10px 14px;font-weight:600;color:var(--text);background:var(--accent)}
+.btn-secondary{background:var(--panel)}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:16px}
+.input{background:#0b0d12;color:var(--text);border:1px solid var(--border);border-radius:var(--radius);padding:10px 12px;width:100%}
+.table{width:100%;border-collapse:collapse}
+.th,.td{border-bottom:1px solid var(--border);text-align:left;padding:8px}
+.modal{border:1px solid var(--border);border-radius:var(--radius);padding:16px;background:#111524}
+.sidebar{min-width:180px;border-right:1px solid var(--border);padding:12px}
+.sidebar-item{padding:8px 4px;color:var(--muted)}
+.navbar{border-bottom:1px solid var(--border);padding:12px;font-weight:700}
+.chart{display:flex;gap:8px;align-items:end;height:120px}
+.chart-bar{width:24px;background:var(--accent);border-radius:6px}
