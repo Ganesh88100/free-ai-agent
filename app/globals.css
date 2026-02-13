@@ -1,0 +1,16 @@
+@import '../components/components.css';
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Inter, system-ui, sans-serif; background: #0f1117; color: #e5ecff; }
+.layout { display: grid; grid-template-columns: 320px 1fr; height: 100vh; }
+.panel { border-right: 1px solid #2a3244; padding: 12px; overflow: auto; }
+.preview { border-top: 1px solid #2a3244; padding: 12px; min-height: 220px; }
+.chat-log { display: flex; flex-direction: column; gap: 8px; margin: 12px 0; }
+.message { background: #151924; border: 1px solid #2a3244; border-radius: 10px; padding: 10px; }
+textarea { width: 100%; min-height: 80px; background: #111524; color: #e5ecff; border: 1px solid #2a3244; border-radius: 10px; padding: 8px; }
+.actions { display: flex; gap: 8px; margin-top: 8px; }
+.status { color: #8ea0c5; font-size: 12px; }
+.preview-wrap { background: #0b0d12; border: 1px solid #2a3244; border-radius: 10px; padding: 12px; }
+.grid { display: grid; gap: 12px; }
+
+.panel-main{border-right:none}

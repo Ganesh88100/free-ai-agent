@@ -1,0 +1,25 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Conversation {
+  id        Int      @id @default(autoincrement())
+  messages  Json
+  timestamp DateTime @default(now())
+}
+
+model UIVersion {
+  id            Int      @id @default(autoincrement())
+  planJson       Json
+  generatedCode  String
+  previewState   Json
+  explanation    String
+  versionNumber  Int
+  parentVersion  Int?
+  timestamp      DateTime @default(now())
+}
